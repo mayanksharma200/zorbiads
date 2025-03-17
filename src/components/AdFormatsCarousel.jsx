@@ -1,8 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 import {
   FaCheckCircle,
   FaDollarSign,
@@ -72,7 +71,7 @@ const AdFormatsCarousel = () => {
     <div id="adsformat" className="w-full px-4 py-10">
       <h2 className="text-3xl font-bold text-center mb-6">AD FORMATS</h2>
       <Swiper
-        modules={[Pagination, Navigation, Autoplay]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
         breakpoints={{
@@ -86,11 +85,7 @@ const AdFormatsCarousel = () => {
           clickable: true,
           el: ".swiper-pagination", // Link to custom pagination container
         }}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-          disabledClass: "swiper-button-disabled",
-        }}
+        draggable={true} // Enable dragging
         className="w-full max-w-6xl"
       >
         {adFormats.map((ad) => (
@@ -124,9 +119,6 @@ const AdFormatsCarousel = () => {
             </div>
           </SwiperSlide>
         ))}
-        {/* Navigation arrows (hidden on smaller screens) */}
-        <div className="swiper-button-next hidden lg:block my-5"></div>
-        <div className="swiper-button-prev hidden lg:block my-5"></div>
       </Swiper>
       {/* Custom pagination container with padding */}
       <div className="swiper-pagination !relative !mt-8"></div>{" "}
