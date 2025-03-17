@@ -9,16 +9,18 @@ import {
   FaSyncAlt,
   FaArrowRight,
 } from "react-icons/fa";
-import user1 from "../assets/profile-pictures/user1.jpg";
-import user2 from "../assets/profile-pictures/user2.jpg";
-import user3 from "../assets/profile-pictures/user3.jpg";
-import user4 from "../assets/profile-pictures/user4.jpg";
+import inpage from "../assets/adsimages/inpage.webp";
+import popunder from "../assets/adsimages/popunder.webp";
+import video from "../assets/adsimages/video.webp";
+import push from "../assets/adsimages/push.webp";
+import directlink from "../assets/adsimages/directlink.webp";
+import banner from "../assets/adsimages/banner.webp";
 
 const adFormats = [
   {
     id: 1,
     title: "POPUNDER",
-    img: user1,
+    img: popunder,
     bid: "$0.32",
     model: "CPM, CPA",
     volume: "> 10M",
@@ -26,24 +28,40 @@ const adFormats = [
   {
     id: 2,
     title: "VIDEO",
-    img: user2,
+    img: video,
     bid: "$0.04",
     model: "CPM, CPC",
     volume: "> 10M",
   },
   {
     id: 3,
+    title: "BANNER",
+    img: banner,
+    bid: "$0.04",
+    model: "CPM, CPC",
+    volume: "> 10M",
+  },
+  {
+    id: 4,
     title: "IN-PAGE",
-    img: user3,
+    img: inpage,
     bid: "$0.0013",
     model: "CPC, CPM",
     volume: "> 10M",
   },
   {
-    id: 4,
+    id: 5,
     title: "PUSH",
-    img: user4,
+    img: push,
     bid: "$0.0061",
+    model: "CPC",
+    volume: "> 6M",
+  },
+  {
+    id: 6,
+    title: "Direct Link",
+    img: directlink,
+    bid: "$0.080",
     model: "CPC",
     volume: "> 6M",
   },
