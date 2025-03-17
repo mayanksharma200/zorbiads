@@ -33,7 +33,7 @@ const SmartLinks = () => {
   ];
 
   return (
-    <div className="bg-gray-100 my-8">
+    <div id="smartlinks" className="bg-gray-100 my-8">
       {/* Hero Content */}
       <div className="container mx-auto px-6 lg:px-20 py-16 flex flex-wrap items-center">
         {/* Left Content */}
