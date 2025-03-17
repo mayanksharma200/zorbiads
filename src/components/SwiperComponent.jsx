@@ -70,7 +70,7 @@ const SwiperComponent = () => {
           alt="Slide Image"
           className="w-full md:w-2/3 h-auto rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.8, x: -50 }}
-          animate={isInView ? { opacity: 1, scale: 1, x: 0 } : {}}
+          animate={isInView ? { opacity: 1, scale: 0.8, x: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeInOut", bounce: 0.4 }}
         />
         <div className="w-full md:w-1/3 flex flex-col">
