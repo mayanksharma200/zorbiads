@@ -22,12 +22,12 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide text-gray-900"
+        className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide text-gray-900 leading-normal sm:leading-[1.2] lg:leading-[1.3]"
       >
-        Advertise and
+        Transforming the programmatic
         <span className="bg-gradient-to-r from-blue-500 to-indigo-800 text-transparent bg-clip-text">
           {" "}
-          Monetize
+          advertising through AI
         </span>
       </motion.h1>
 
@@ -38,8 +38,9 @@ const HeroSection = () => {
         transition={{ duration: 1, delay: 0.3 }}
         className="mt-10 text-lg text-center text-gray-700 max-w-4xl"
       >
-        We supply advertisers with traffic and help publishers monetize using
-        smart links and various formats.
+        A next-generation ad mediation platform offering powerful solutions to
+        the advertisers and publishers. Discover how we can uncover your full
+        potential here
       </motion.p>
 
       {/* Buttons with Motion (Fade Left & Right) */}
