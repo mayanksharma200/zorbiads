@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import SmartLinks from "./components/SmartLinks";
 import PaymentMethodsCarousel from "./components/PaymentMethodsCarousel";
 import AdFormatsCarousel from "./components/AdFormatsCarousel";
+import SwiperComponent from "./components/SwiperComponent";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
           <AdFormatsCarousel />
         </div>
+        <SwiperComponent/>
         <FeatureSection id="features" />
         {/* <Workflow /> */}
         {/* <Pricing /> */}
