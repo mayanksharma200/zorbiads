@@ -25,6 +25,15 @@ const Navbar = () => {
     };
   }, []);
 
+  // Disable background scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileDrawerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [mobileDrawerOpen]);
+
   return (
     <nav className="sticky top-0 z-50 py-3 bg-white border-b border-gray-300 shadow-md">
       <div className="container px-4 mx-auto relative lg:text-sm">
@@ -67,15 +76,21 @@ const Navbar = () => {
         {mobileDrawerOpen && (
           <div
             ref={menuRef}
-            className="fixed right-0 z-20 bg-white w-full p-12 flex flex-col justify-center items-center lg:hidden shadow-md border-t border-gray-300"
+            className="fixed top-0 left-0 w-full h-full bg-white flex flex-col justify-center items-center z-50 shadow-md"
           >
+            <button
+              onClick={toggleNavbar}
+              className="absolute top-5 right-5 text-gray-900"
+            >
+              <X />
+            </button>
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
                   <a
                     href={item.href}
                     className="text-gray-900 hover:text-blue-600 transition"
-                    onClick={toggleNavbar} // Close menu when a link is clicked
+                    onClick={() => setMobileDrawerOpen(false)} // Close menu on click
                   >
                     {item.label}
                   </a>
