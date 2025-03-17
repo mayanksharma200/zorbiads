@@ -10,6 +10,19 @@ const Navbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
 
+  const handleNavigation = (href) => {
+    // Close the mobile drawer
+    setMobileDrawerOpen(false);
+
+    // Add a small delay to ensure the drawer is closed before scrolling
+    setTimeout(() => {
+      const section = document.querySelector(href);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Adjust the delay as needed
+  };
+
   return (
     <nav className="sticky top-0 z-50 py-3 bg-white border-b border-gray-300 shadow-md">
       <div className="max-w-7xl mx-auto px-4 relative lg:text-sm">
@@ -29,10 +42,7 @@ const Navbar = () => {
                   className="text-gray-900 hover:text-blue-600 transition"
                   onClick={(e) => {
                     e.preventDefault();
-                    const section = document.querySelector(item.href);
-                    if (section) {
-                      section.scrollIntoView({ behavior: "smooth" });
-                    }
+                    handleNavigation(item.href);
                   }}
                 >
                   {item.label}
@@ -68,6 +78,10 @@ const Navbar = () => {
                   <a
                     href={item.href}
                     className="text-gray-900 hover:text-blue-600 transition"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation(item.href);
+                    }}
                   >
                     {item.label}
                   </a>
