@@ -12,8 +12,8 @@ import AdFormatsCarousel from "./components/AdFormatsCarousel";
 const App = () => {
   return (
     <>
-      <Navbar />
       <div className="max-w-7xl mx-auto pt-20 px-6 overflow-x-hidden">
+      <Navbar />
         <HeroSection />
         <SmartLinks />
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
