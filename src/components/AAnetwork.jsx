@@ -45,7 +45,7 @@ const AAnetwork = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Advanced Advertising Network
+          Advanced AdTech Platform
         </motion.h1>
         <motion.p
           className="text-xl mt-4 opacity-90 text-neutral-400"
