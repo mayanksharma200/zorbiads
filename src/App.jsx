@@ -22,7 +22,7 @@ const App = () => {
         <div className="flex justify-center items-center min-h-screen bg-dark-100">
           <AdFormatsCarousel />
         </div>
-        <SwiperComponent />
+        {/* <SwiperComponent /> */}
         <FeatureSection id="features" />
         {/* <Workflow /> */}
         {/* <Pricing /> */}
