@@ -22,10 +22,10 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide text-gray-900 leading-normal sm:leading-[1.2] lg:leading-[1.3]"
+        className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide text-white-900 leading-normal sm:leading-[1.2] lg:leading-[1.3]"
       >
         Transforming the programmatic
-        <span className="bg-gradient-to-r from-blue-500 to-indigo-800 text-transparent bg-clip-text">
+        <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
           {" "}
           advertising through AI
         </span>
@@ -36,7 +36,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="mt-10 text-lg text-center text-gray-700 max-w-4xl"
+        className="mt-10 text-lg text-center text-neutral-500 max-w-4xl"
       >
         A next-generation ad mediation platform offering powerful solutions to
         the advertisers and publishers. Discover how we can uncover your full
@@ -50,7 +50,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
           href="#"
-          className="bg-gradient-to-r from-blue-500 to-indigo-800 py-3 px-4 mx-3 rounded-md text-white"
+          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md text-white"
         >
           Start for free
         </motion.a>
@@ -59,7 +59,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
           href="#"
-          className="py-3 px-4 mx-3 rounded-md border border-gray-400 text-gray-900"
+          className="py-3 px-4 mx-3 rounded-md border border-neutral-400 text-white-900"
         >
           Documentation
         </motion.a>
@@ -80,7 +80,7 @@ const HeroSection = () => {
               autoPlay
               loop
               muted
-              className="rounded-lg w-full border border-gray-300 shadow-md shadow-gray-400"
+              className="rounded-lg w-full border border-orange-700 shadow-sm shadow-orange-400"
             >
               <source src={video1} type="video/mp4" />
               Your browser does not support the video tag.
@@ -91,7 +91,7 @@ const HeroSection = () => {
               autoPlay
               loop
               muted
-              className="rounded-lg w-full border border-gray-300 shadow-md shadow-gray-400"
+              className="rounded-lg w-full border border-orange-700 shadow-sm shadow-orange-400"
             >
               <source src={video2} type="video/mp4" />
               Your browser does not support the video tag.

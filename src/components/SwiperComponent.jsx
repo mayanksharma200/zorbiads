@@ -12,8 +12,8 @@ const SlideContent = ({ title, points }) => (
     transition={{ duration: 0.8, ease: "easeInOut" }}
     className="p-8"
   >
-    <h2 className="text-4xl font-extrabold text-purple-900">{title}</h2>
-    <ul className="mt-4 text-lg text-gray-700">
+    <h2 className="text-4xl font-extrabold text-orange-500">{title}</h2>
+    <ul className="mt-4 text-lg text-gray-300">
       {points.map((point, index) => (
         <motion.li
           key={index}
@@ -58,7 +58,7 @@ const SwiperComponent = () => {
   return (
     <div
       ref={ref}
-      className="flex flex-col items-center justify-center min-h-screen bg-white"
+      className="flex flex-col items-center justify-center min-h-screen bg-neutral-900"
     >
       <div
         className={`w-full max-w-6xl flex flex-col md:flex-row items-center transition-opacity duration-500 ${

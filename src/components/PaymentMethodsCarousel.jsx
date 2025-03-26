@@ -10,43 +10,68 @@ import {
   FaBitcoin,
   FaApplePay,
   FaGooglePay,
-  FaStripe
+  FaStripe,
 } from "react-icons/fa";
 
 const paymentMethods = [
   {
     id: 1,
-    icon: <FaPaypal size={40} className="text-blue-500" />,
+    icon: (
+      <FaPaypal
+        size={40}
+        className="text-blue-500 hover:text-blue-700 transition-colors"
+      />
+    ),
     name: "PayPal",
   },
   {
     id: 2,
-    icon: <FaCcVisa size={40} className="text-blue-700" />,
+    icon: (
+      <FaCcVisa
+        size={40}
+        className="text-blue-700 hover:text-blue-900 transition-colors"
+      />
+    ),
     name: "Visa",
   },
   {
     id: 3,
-    icon: <FaCcMastercard size={40} className="text-red-500" />,
+    icon: (
+      <FaCcMastercard
+        size={40}
+        className="text-red-600 hover:text-red-800 transition-colors"
+      />
+    ),
     name: "MasterCard",
   },
   {
     id: 4,
-    icon: <FaCcAmex size={40} className="text-blue-400" />,
+    icon: (
+      <FaCcAmex
+        size={40}
+        className="text-blue-400 hover:text-blue-700 transition-colors"
+      />
+    ),
     name: "Amex",
   },
   {
     id: 5,
-    icon: <FaBitcoin size={40} className="text-yellow-500" />,
+    icon: (
+      <FaBitcoin
+        size={40}
+        className="text-yellow-500 hover:text-yellow-700 transition-colors"
+      />
+    ),
     name: "Bitcoin",
   },
   {
     id: 6,
-    icon: <FaApplePay size={40} className="text-black" />,
+    icon: <FaApplePay size={40} className="text-neutral-100" />,
     name: "Apple Pay",
   },
   {
     id: 7,
-    icon: <FaGooglePay size={40} className="text-gray-600" />,
+    icon: <FaGooglePay size={40} className="text-neutral-500" />,
     name: "Google Pay",
   },
   {
@@ -54,7 +79,7 @@ const paymentMethods = [
     icon: (
       <FaStripe
         size={40}
-        className="text-purple-600 hover:text-purple-800 transition-colors"
+        className="text-purple-500 hover:text-purple-700 transition-colors"
       />
     ),
     name: "Stripe",
@@ -65,7 +90,7 @@ const PaymentMethodsCarousel = () => {
   console.log(paymentMethods);
 
   return (
-    <div className="w-full flex justify-center mt-10">
+    <div className="w-full flex justify-center mt-10 bg-neutral-900 py-10">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={30}
@@ -86,7 +111,7 @@ const PaymentMethodsCarousel = () => {
           >
             <div className="flex flex-col items-center">
               {method.icon}
-              <p className="text-sm text-gray-600 mt-2">{method.name}</p>
+              <p className="text-sm text-neutral-400 mt-2">{method.name}</p>
             </div>
           </SwiperSlide>
         ))}

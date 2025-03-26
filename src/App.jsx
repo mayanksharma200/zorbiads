@@ -9,6 +9,7 @@ import SmartLinks from "./components/SmartLinks";
 import PaymentMethodsCarousel from "./components/PaymentMethodsCarousel";
 import AdFormatsCarousel from "./components/AdFormatsCarousel";
 import SwiperComponent from "./components/SwiperComponent";
+import AAnetwork from "./components/AAnetwork";
 
 const App = () => {
   return (
@@ -16,21 +17,23 @@ const App = () => {
       <Navbar />
       <div className="max-w-7xl mx-auto pt-20 px-6 overflow-x-hidden">
         <HeroSection />
-        <SmartLinks />
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <AAnetwork/>
+        {/* <SmartLinks /> */}
+        <div className="flex justify-center items-center min-h-screen bg-dark-100">
           <AdFormatsCarousel />
         </div>
-        <SwiperComponent/>
+        <SwiperComponent />
         <FeatureSection id="features" />
         {/* <Workflow /> */}
         {/* <Pricing /> */}
         <Testimonials />
         <div className="my-10">
-          <h2 className="text-center text-2xl font-semibold">
+          <h2 className="text-center text-2xl font-semibold bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
             Supported Payment Methods
           </h2>
           <PaymentMethodsCarousel />
         </div>
+
         <Footer />
       </div>
     </>
