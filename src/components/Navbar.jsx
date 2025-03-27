@@ -32,7 +32,7 @@ const Navbar = () => {
             />
             <span className="text-xl tracking-tight text-white">Zorbiads</span>
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12 backdrop-blur-lg">
+          <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a
