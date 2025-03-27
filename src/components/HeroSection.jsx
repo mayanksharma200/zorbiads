@@ -36,7 +36,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="mt-10 text-lg text-center text-neutral-500 max-w-4xl"
+        className="mt-10 text-lg text-center text-neutral-400 max-w-4xl"
       >
         A next-generation ad mediation platform offering powerful solutions to
         the advertisers and publishers. Discover how we can uncover your full

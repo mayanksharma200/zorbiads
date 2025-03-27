@@ -30,7 +30,9 @@ const Navbar = () => {
               src={logo}
               alt="Logo"
             />
-            <span className="text-xl tracking-tight text-white">Zorbiads</span>
+            <span className="text-xl tracking-tight text-white">
+              Zorbit Ads
+            </span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (

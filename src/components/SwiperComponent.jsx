@@ -39,7 +39,7 @@ const SwiperComponent = () => {
 
   const slideData = [
     {
-      title: "Zorbiads for DSPs",
+      title: "Zorbit Ads for DSPs",
       points: [
         "Avoid multiple integrations with Ad Exchanges. Save your time and engineering efforts.",
         "Get access to unlimited inventory. Reach out to every last user on the internet.",
@@ -47,7 +47,7 @@ const SwiperComponent = () => {
       ],
     },
     {
-      title: "Zorbiads for SSPs",
+      title: "Zorbit Ads for SSPs",
       points: [
         "Increase the demand for your inventory. Monetise every single impression you get through multiple DSPs.",
         "Reduce the payload of your product. You just need one SDK now for multiple exchanges.",
