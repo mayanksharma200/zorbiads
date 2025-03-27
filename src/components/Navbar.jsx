@@ -32,7 +32,7 @@ const Navbar = () => {
             />
             <span className="text-xl tracking-tight text-white">Zorbiads</span>
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12">
+          <ul className="hidden lg:flex ml-14 space-x-12 backdrop-blur-lg">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a
@@ -64,12 +64,20 @@ const Navbar = () => {
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar} className="text-gray-300">
-              {mobileDrawerOpen ? <X /> : <Menu />}
+              {mobileDrawerOpen ? <Menu size={30} /> : <Menu size={30} />}
             </button>
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="fixed inset-0 z-20 flex flex-col items-center justify-start pt-24 bg-neutral-900/80 backdrop-blur-lg lg:hidden min-h-screen">
+            {/* Close Button */}
+            <button
+              onClick={toggleNavbar}
+              className="absolute top-5 right-5 text-gray-300 hover:text-red-400 transition"
+            >
+              <X size={30} />
+            </button>
+
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
