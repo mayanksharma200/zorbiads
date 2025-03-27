@@ -29,7 +29,7 @@ const paymentMethods = [
     icon: (
       <FaCcVisa
         size={40}
-        className="text-blue-700 hover:text-blue-900 transition-colors"
+        className="text-blue-500 hover:text-blue-700 transition-colors"
       />
     ),
     name: "Visa",

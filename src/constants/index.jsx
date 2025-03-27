@@ -13,9 +13,9 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Features", href: "#features" },
-  { label: "Smart Links", href: "#smartlinks" },
   { label: "Ads Format", href: "#adsformat" },
+  { label: "Ads Platform", href: "#adsnetwork" },
+  { label: "Features", href: "#features" },
   { label: "Testimonials", href: "#testimonials" },
 ];
 

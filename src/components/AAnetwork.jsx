@@ -22,7 +22,10 @@ const AAnetwork = () => {
   }, []);
 
   return (
-    <div className="relative flex items-center justify-center h-screen overflow-hidden bg-neutral-900 mt-10">
+    <div
+      id="adsnetwork"
+      className="relative flex items-center justify-center h-screen overflow-hidden bg-neutral-900 mt-10"
+    >
       {/* Animated Sparkles */}
       {sparkles.map((sparkle) => (
         <motion.div
